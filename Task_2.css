@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #C5E4E7;
+}
+
+.split-screen {
+    display: flex;
+    width: 80%; 
+    max-width: 1200px;
+    height: 70%; 
+    max-height: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    margin: 35px;
+    background-color: #00474B;
+    border-radius: 20px;
+}
+.logo {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 150px; 
+}
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-addon {
+    position: absolute;
+    pointer-events: none; 
+    padding: 6px 10px;
+    color: #A9BFBD;
+    font-size: 16px;
+}
+
+.input-wrapper input {
+    padding: 8px 10px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: end;
+    color: #A9BFBD;
+    margin: 10px 0px 20px 0px;
+    font-weight: bold;
+}
+.input-wrapper input:hover {
+    border: #5FABA1 solid 2px;
+    background-color: #F3F8FB;
+}
+.input-wrapper input[type="number"] {
+    padding-left: 30px;
+}
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.btns button {
+    border-radius: 5px;
+    background-color: #00474B;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+}
+.btns button:hover {
+    background-color: #9FE8DF;
+    border: none;
+}
+#custom {
+    width: 60px;
+    padding: 10px 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    background-color: #F4F8FB;
+    color: #738C89;
+}
+#custom::placeholder{
+    text-align: center;
+    /* color: black; */
+}
+#custom:hover {
+    border: #5EB0A4 solid 1px;
+}
+
+.btns button, .btns input {
+    flex: 1 1 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+}
+
+.btns input#custom {
+    flex: 1 1 calc(25.333% - 10px); 
+    max-width: calc(33.333% - 10px);
+}
+
+.input-wrapper-img {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 25px;
+}
+
+.input-addon-img {
+    position: absolute;
+    left: 10px; 
+    top: 55%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.input-wrapper-img input {
+    padding: 8px 10px;
+    padding-left: 40px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: end;
+    color: #A9BFBD;
+    margin: 10px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.input-wrapper-img input:hover {
+    border: #B77E75 solid 2px;
+    background-color: #F3F8FB;
+}
+.amount-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.amount-line {
+    display: flex;
+    align-items: center;
+    gap: 270px; 
+}
+#totalNum {
+    padding-left: 45px;
+}
+#tipNum, #totalNum {
+    font-size: 2em; 
+    margin: 0;
+    color: #2CBDAC;
+}
+#total , #tip {
+    color: #E3FBFB;
+}
+h6 {
+    margin: 0;
+    font-size: 0.8em; 
+    color: #669BA1; 
+}
+#reset {
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0D686D;
+    color: #045B62;
+    font-weight: bold;
+}
+#reset:hover {
+    background-color: #9FE8DF;
+}
+label {
+    color: #6F7B77;
+}
+.btns button.active {
+    background-color: #9FE8DF;
+    color: #00474B; 
+}
+
+

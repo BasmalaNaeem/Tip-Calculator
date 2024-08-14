@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Task_2.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <img src="./logo.svg" alt="Logo" class="logo">
+    <div class="split-screen">
+        <div class="left-section">
+            <div class="container">
+                <label for="bill">Bill</label><br>
+                <div class="input-wrapper">
+                    <span class="input-addon">$</span>
+                    <input type="number" id="bill" placeholder="0" required>
+                </div>
+                <label>Select Tip %</label>
+                <div class="btns">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <input type="number" placeholder="Custom" id="custom">
+                </div>
+                <div class="input-wrapper-img">
+                    <label for="numOfpeaple">Number Of Peaple</label>
+                    <img src="./icon-person.svg" class="input-addon-img"><input type="number" id="numOfpeaple" placeholder="0">
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="amount-container">
+                <span class="amount">
+                    <div class="amount-line">
+                        <h4 id="tip">Tip Amount</h4>
+                        <h2 id="tipNum">$0.00</h2>
+                    </div>
+                    <h6>/ person</h6>
+                </span>
+                <span class="amount">
+                    <div class="amount-line">
+                        <h4 id="total">Total</h4>
+                        <h2 id="totalNum">$0.00</h2>
+                    </div>
+                    <h6>/ person</h6>
+                </span>
+            </div>
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+    <script src="./Task_2.js"></script>
+</body>
+</html>
